@@ -16,7 +16,7 @@
      font-weight: 700;
  }
 
-@font-face {
+ @font-face {
      font-family: "SiyuanSC";
      src: url("./SourceHanSansSC-Heavy.ttf");
      font-weight: 900;
@@ -24,7 +24,7 @@
 
 
  body {
-     font-family: 'SiyuanSC' ;
+     font-family: 'SiyuanSC';
      font-weight: 700;
      margin: 0%;
  }
@@ -69,7 +69,7 @@
 
  .right-top-box {
      flex: 667;
-     margin-bottom: 20px;
+     margin-bottom: 10px;
      background-color: white;
      border-radius: 30px;
      border: 1px solid black;
@@ -111,6 +111,7 @@
      margin: 0;
      margin-top: 40px;
      text-align: center;
+     font-weight: 900;
      letter-spacing: 2px;
      font-size: 28px;
      color: #BFBFBF;
@@ -152,4 +153,57 @@
      text-align: center;
      font-size: 36px;
      color: black;
+ }
+
+
+ .rectangle {
+     height: 71px;
+     width: 313px;
+     border: 1px solid black;
+     border-radius: 58px;
+     background-color: #7F7F7F;
+     margin: auto;
+     vertical-align: middle;
+     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+         0px 3px 7px 0px rgba(0, 0, 0, 0.1),
+         0px 12px 12px 0px rgba(0, 0, 0, 0.09),
+         0px 27px 16px 0px rgba(0, 0, 0, 0.05),
+         0px 49px 20px 0px rgba(0, 0, 0, 0.01);
+ }
+
+ .week {
+     margin: 0%;
+     text-align: center;
+     vertical-align: middle;
+     color: white;
+     font-weight: 900;
+     font-size: 48px;
+     -webkit-text-stroke: 1px black;
+ }
+
+ .percentage {
+     margin: 0%;
+     margin-top: 22px;
+     letter-spacing: 2px;
+     text-align: center;
+     font-weight: 900;
+     font-size: 144px;
+     color: #BFBFBF;
+     text-shadow:
+         1px 0px 0px black,
+         -1px 0px 0px black,
+         0px 1px 0px black,
+         0px -1px 0px black,
+         0px 0px 0px rgba(0, 0, 0, 0.1),
+         0px 3px 7px rgba(0, 0, 0, 0.1),
+         0px 12px 12px rgba(0, 0, 0, 0.09),
+         0px 27px 16px rgba(0, 0, 0, 0.05),
+         0px 49px 20px rgba(0, 0, 0, 0.01);
+ }
+
+ .schedule{
+    margin-left: 5px;
+     letter-spacing: 2px;
+     font-size: 36px;
+     color: #7F7F7F;
  }
