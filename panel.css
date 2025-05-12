@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+  body{
+    margin: 0%;
+  }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1450, initial-scale=1.0">
-    <title>Kindle日历</title>
-    <style>
-        .container {
+  .container {
             display: flex;
             width: 1450px;
             height: 1080px;
@@ -18,7 +14,7 @@
             display: flex;
             flex: 0.554;
             /* background-color: greenyellow; */
-            margin: 20px;
+            margin: 10px;
             flex-direction: column;
         }
 
@@ -28,12 +24,12 @@
             
             flex: 0.896;
             background-color: white;
-            margin: 20px 0px 20px 20px;
+            margin: 10px 0px 10px 10px;
             border-radius: 30px;
             border: 1px solid black;
         }
 
-        .panel{
+        .shadow{
             width: 100%;
             height: 100%;
             border-radius: 30px;
@@ -43,7 +39,6 @@
             0px 27px 16px 0px rgba(0, 0, 0, 0.05),
             0px 49px 20px 0px rgba(0, 0, 0, 0.1);
         }
-
         
         .right-top-box {
             flex: 667;
@@ -59,29 +54,9 @@
             border-radius: 30px;
             border: 1px solid black;
         }
-    </style>
-</head>
 
-<body>
-    <div class="container">
-        <div class="left-box">
-            <div class="panel">
-                内容1
-            </div>
-        </div>
-        <div class="right-box">
-            <div class="right-top-box">
-                <div class="panel">
-                    内容1
-                </div>
-            </div>
-            <div class="right-bottom-box">
-                <div class="panel">
-                    内容1
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
+        .panel{
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
