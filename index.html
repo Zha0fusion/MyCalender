@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=1450, initial-scale=1.0">
+    <title>Kindle日历</title>
+    <style>
+        .container {
+            display: flex;
+            width: 1450px;
+            height: 1080px;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .right-box {
+            display: flex;
+            flex: 0.554;
+            /* background-color: greenyellow; */
+            margin: 20px;
+            flex-direction: column;
+        }
+
+        /* 以下部分就是背景边框组件的设置 */
+
+        .left-box {
+            
+            flex: 0.896;
+            background-color: white;
+            margin: 20px 0px 20px 20px;
+            border-radius: 30px;
+            border: 1px solid black;
+        }
+
+        .panel{
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+            0px 3px 0px 0px rgba(0, 0, 0, 0.1),
+            0px 12px 12px 0px rgba(0, 0, 0, 0.09),
+            0px 27px 16px 0px rgba(0, 0, 0, 0.05),
+            0px 49px 20px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .right-top-box {
+            flex: 667;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 30px;
+            border: 1px solid black;
+        }
+
+        .right-bottom-box {
+            flex: 413;
+            background-color: white;
+            border-radius: 30px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="left-box">
+            <div class="panel">
+                内容1
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="right-top-box">
+                <div class="panel">
+                    内容1
+                </div>
+            </div>
+            <div class="right-bottom-box">
+                <div class="panel">
+                    内容1
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
