@@ -1,99 +1,155 @@
-  body {
-      font-family: 'Noto Sans SC', sans-serif;
-      margin: 0%;
-  }
+ @font-face {
+     font-family: "SiyuanSC";
+     src: url("./SourceHanSansSC-Normal-Min.ttf");
+     font-weight: normal;
+ }
 
-  .container {
-      display: flex;
-      width: 1450px;
-      height: 1080px;
-      margin: 0%;
-      padding: 0%;
-  }
+ @font-face {
+     font-family: "SiyuanSC";
+     src: url("./SourceHanSansSC-Medium-Min.ttf");
+     font-weight: 500;
+ }
 
-  .right-box {
-      display: flex;
-      flex: 0.554;
-      /* background-color: greenyellow; */
-      margin: 10px;
-      flex-direction: column;
-  }
+ @font-face {
+     font-family: "SiyuanSC";
+     src: url("./SourceHanSansSC-Bold-Min.ttf");
+     font-weight: 700;
+ }
 
-  /* 以下部分就是背景边框组件的设置 */
+@font-face {
+     font-family: "SiyuanSC";
+     src: url("./SourceHanSansSC-Heavy.ttf");
+     font-weight: 900;
+ }
 
-  .left-box {
 
-      flex: 0.896;
-      background-color: white;
-      margin: 10px 0px 10px 10px;
-      border-radius: 30px;
-      border: 1px solid black;
-  }
+ body {
+     font-family: 'SiyuanSC' ;
+     font-weight: 700;
+     margin: 0%;
+ }
 
-  .shadow {
-      width: 100%;
-      height: 100%;
-      border-radius: 30px;
-      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
-          0px 3px 7px 0px rgba(0, 0, 0, 0.1),
-          0px 12px 12px 0px rgba(0, 0, 0, 0.09),
-          0px 27px 16px 0px rgba(0, 0, 0, 0.05),
-          0px 49px 20px 0px rgba(0, 0, 0, 0.01);
-  }
+ .container {
+     display: flex;
+     width: 1450px;
+     height: 1080px;
+     margin: 0%;
+     padding: 0%;
+ }
 
-  .right-top-box {
-      flex: 667;
-      margin-bottom: 20px;
-      background-color: white;
-      border-radius: 30px;
-      border: 1px solid black;
-  }
+ .right-box {
+     display: flex;
+     flex: 0.554;
+     /* background-color: greenyellow; */
+     margin: 10px;
+     flex-direction: column;
+ }
 
-  .right-bottom-box {
-      flex: 413;
-      background-color: white;
-      border-radius: 30px;
-      border: 1px solid black;
-  }
+ /* 以下部分就是背景边框组件的设置 */
 
-  .panel {
-      width: auto;
-      height: auto;
-      padding: 20px;
-  }
+ .left-box {
 
-  .titlebar {
-      display: flex;
-  }
+     flex: 0.896;
+     background-color: white;
+     margin: 10px 0px 10px 10px;
+     border-radius: 30px;
+     border: 1px solid black;
+ }
 
-  .icon {
-      width: 55px;
-      height: 55px;
-      margin-right: 10px;
-  }
+ .shadow {
+     width: 100%;
+     height: 100%;
+     border-radius: 30px;
+     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+         0px 3px 7px 0px rgba(0, 0, 0, 0.1),
+         0px 12px 12px 0px rgba(0, 0, 0, 0.09),
+         0px 27px 16px 0px rgba(0, 0, 0, 0.05),
+         0px 49px 20px 0px rgba(0, 0, 0, 0.01);
+ }
 
-  h2 {
-      margin: 0;
-      font-weight: bolder;
-      font-size: 36px;
-      position: relative;
-      top: -2px;
-      color: #696969;
-  }
+ .right-top-box {
+     flex: 667;
+     margin-bottom: 20px;
+     background-color: white;
+     border-radius: 30px;
+     border: 1px solid black;
+ }
 
-  .date-in-chinese {
-      margin: 0;
-      margin-top: 40px;
-      text-align: center;
-      font-weight: bolder;
-      font-size: 28px;
-      color:#AAAAAA;
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: #696969;
-      text-shadow:
-          0px 0px 1px rgba(0, 0, 0, 0.3),
-          0px 2px 5px rgba(0, 0, 0, 0.1),
-          0px 10px 10px rgba(0, 0, 0, 0.09),
-          0px 21px 13px rgba(0, 0, 0, 0.05),
-          0px 38px 15px rgba(0, 0, 0, 0.01);
-  }
+ .right-bottom-box {
+     flex: 413;
+     background-color: white;
+     border-radius: 30px;
+     border: 1px solid black;
+ }
+
+ .panel {
+     width: auto;
+     height: auto;
+     padding: 20px;
+ }
+
+ .titlebar {
+     display: flex;
+ }
+
+ .icon {
+     width: 55px;
+     height: 55px;
+     margin-right: 10px;
+ }
+
+ h2 {
+     margin: 0;
+     letter-spacing: 2px;
+     font-size: 36px;
+     position: relative;
+     top: -2px;
+     color: #696969;
+ }
+
+ .date-in-chinese {
+     margin: 0;
+     margin-top: 40px;
+     text-align: center;
+     letter-spacing: 2px;
+     font-size: 28px;
+     color: #BFBFBF;
+     -webkit-text-stroke-width: 2px;
+     -webkit-text-stroke-color: #696969;
+     text-shadow:
+         0px 0px 1px rgba(0, 0, 0, 0.3),
+         0px 2px 5px rgba(0, 0, 0, 0.1),
+         0px 10px 10px rgba(0, 0, 0, 0.09),
+         0px 21px 13px rgba(0, 0, 0, 0.05),
+         0px 38px 15px rgba(0, 0, 0, 0.01);
+ }
+
+ .date {
+     margin: 0%;
+     letter-spacing: 2px;
+     line-height: 1;
+     text-align: center;
+     font-weight: 900;
+     font-size: 350px;
+     color: #BFBFBF;
+     text-shadow:
+         1px 0px 0px black,
+         -1px 0px 0px black,
+         0px 1px 0px black,
+         0px -1px 0px black,
+         0px 0px 0px rgba(0, 0, 0, 0.1),
+         0px 3px 7px rgba(0, 0, 0, 0.1),
+         0px 12px 12px rgba(0, 0, 0, 0.09),
+         0px 27px 16px rgba(0, 0, 0, 0.05),
+         0px 49px 20px rgba(0, 0, 0, 0.01);
+ }
+
+ .fulldate {
+     margin: 0%;
+     margin-top: 25px;
+     letter-spacing: 2px;
+     line-height: 2;
+     text-align: center;
+     font-size: 36px;
+     color: black;
+ }
