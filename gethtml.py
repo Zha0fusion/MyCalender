@@ -118,7 +118,7 @@ def getDay():
     
 #-----------获取完整日期-----------
 def getFulldate():
-    today = date(2025, 5, 6)  # 你也可以用 date.today()
+    today = date.today()  # 你也可以用 date.today()
     weekday_cn = "星期" + "一二三四五六日"[today.weekday()]
     fulldate = f"{today.year}年{today.month}月{today.day}日 {weekday_cn}"
     return fulldate
@@ -158,6 +158,7 @@ def run():
     schedule = getSchedule()
     day = getDay()
     fulldate = getFulldate()
+    print(fulldate)
     num_week = getWeek()
     week = "Week " + str(num_week)
     percentage = getPercentage()
@@ -176,4 +177,4 @@ def run():
                 .replace("{{time}}", disp_time) 
 
     with open("calendar.html", "w", encoding="utf-8") as f:
-    f.write(html)
+        f.write(html)
