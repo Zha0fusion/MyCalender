@@ -1,0 +1,2 @@
+#学习分支
+在main分支之前的版本，通过jupyternote分区块学习并验证chatgpt生成功能的可行性
