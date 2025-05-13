@@ -16,7 +16,6 @@ num_week = 6
 percentage = "67%"
 
 schedule = "测试\n测试\n测试"
-url = "https://p215-caldav.icloud.com.cn/published/2/MTY5NDM3NDIyODkxNjk0MxQGglZSrjcCCgbEAcXHCbH1PEeMJlXixNdWItQaJ3vTpLQG9mBKbwfAoA3nGulbAnNxSzx-Nh8QY1dQ9ZSBoTQ"
 disp_time = datetime.now().strftime("%H:%M")
 
 #实现代码
