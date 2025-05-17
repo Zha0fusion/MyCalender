@@ -51,14 +51,29 @@ def getSchedule():
         description = component.get("description")
         dtstart = component.get("dtstart").dt
         dtend = component.get("dtend").dt
-
-        # 判断是否是全天事件
+        repeat = component.get("rrule")
+        
+       # 判断是否是全天事件
         if isinstance(dtstart, date) and not isinstance(dtstart, datetime):
-            if dtstart == today:
+            if component.get('rrule'):
+                rule_str = component.get('rrule').to_ical().decode()
+                rule = rrulestr(rule_str, dtstart=dtstart)
+                occurrences = rule.between(
+                    datetime.combine(today, datetime.min.time()),
+                    datetime.combine(today + timedelta(days=1), datetime.min.time()),
+                    inc=True
+                )   
+            if any(o.date() == today for o in occurrences):
                 all_day_events.append({
-                    "title": summary,
-                    "desc": description
+                     "title": summary,
+                     "desc": description
                 })
+            else:
+                if dtstart == today:
+                    all_day_events.append({
+                        "title": summary,
+                        "desc": description
+                    })
         else:
             # 时间事件处理
             tzinfo = dtstart.tzinfo
