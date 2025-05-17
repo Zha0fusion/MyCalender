@@ -107,6 +107,7 @@ def getSchedule():
     if not all_day_events and not timed_events:
         output_lines.append(f"今天（{today}）没有事件。")
 
+
     return "\n".join(output_lines)
 
 #-----------获取天数---------------
@@ -130,12 +131,12 @@ def getWeek():
 
     # 计算周数（+1 表示第几周，从1开始）
     delta_days = (today - semester_start).days
-    week_number = delta_days // 7 + 1
+    week_number = delta_days // 7 
     return week_number
 
 #---------获取当前时间降水概率-------
 def getPercentage():
-    url = "https://weather.com/zh-CN/weather/hourbyhour/l/Kuala%2BLumpur%2BMalaysia?canonicalCityId=91a6f9c5c0d51f40d6a3eb94a0498ed0"
+    url = "https://weather.com/zh-CN/weather/hourbyhour/l/7060f5209919b5a8aa267b5ac29e909f3fc47337599740fde30b42d4e44aeed4#detailIndex4"
     headers = {
     "User-Agent": "Mozilla/5.0"
     }
@@ -161,6 +162,7 @@ def run():
     num_week = getWeek()
     week = "Week " + str(num_week)
     percentage = getPercentage()
+    
 
     #----------添加到html-------------
 
@@ -177,3 +179,4 @@ def run():
 
     with open("calendar.html", "w", encoding="utf-8") as f:
         f.write(html)
+
