@@ -148,8 +148,6 @@ def getWeek():
     # 计算周数（+1 表示第几周，从1开始）
     delta_days = (today - semester_start).days
     week_number = delta_days // 7 + 1
-
-    print(week_number)
     
     return week_number
 
@@ -198,5 +196,3 @@ def run():
 
     with open("calendar.html", "w", encoding="utf-8") as f:
         f.write(html)
-
-num_week = getWeek()
