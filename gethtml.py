@@ -139,14 +139,18 @@ def getFulldate():
     return fulldate
 #-----------获取学期周-------------
 def getWeek():
-    semester_start = date(2025, 3, 28)
+    semester_start = date(2025, 3, 31)
 
     # 今天日期（你也可以手动指定）
     today = date.today()
+    # today = date(2025,5,18)
 
     # 计算周数（+1 表示第几周，从1开始）
     delta_days = (today - semester_start).days
-    week_number = delta_days // 7 
+    week_number = delta_days // 7 + 1
+
+    print(week_number)
+    
     return week_number
 
 #---------获取当前时间降水概率-------
@@ -195,3 +199,4 @@ def run():
     with open("calendar.html", "w", encoding="utf-8") as f:
         f.write(html)
 
+num_week = getWeek()
